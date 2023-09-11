@@ -1,4 +1,4 @@
-# Page-Loading-animation
+# Interactive-WorldMap-with-Loading-Page
 
 This project showcases an interactive loading page featuring an World Map with a captivating hover effect. This loading page is designed to engage users and provide an appealing visual experience while content is being loaded on a website.
 
