@@ -1,0 +1,130 @@
+This is a HTML and CSS based Programming Language Project. There are two important sections "SETUP" and "INSIGHT" both describes about the project.
+
+Setup:
+1. HTML and CSS Language Compatible IDE (recommended - Visual Studio Code)
+2. Extensions needed for running the project:
+	a. Live Server - Ritwick Dev
+	b. HTML CSS Support - CSS Intellisense for HTML
+3. A separate folder to store this project
+
+
+Insight:
+		-------------------------------------------------- FOR MAIN DOCUMNET (main.html)--------------------------------------
+1. Document Type Declaration (DOCTYPE):
+	<!DOCTYPE html>: This line specifies that the document is written in HTML5, the latest version of the Hypertext Markup Language.
+
+2. HTML Structure:
+	<html lang="en">: The <html> tag defines the beginning of an HTML document. The lang="en" attribute indicates that the document is in English.
+
+3. Head Section:
+	<head>: This section contains meta-information about the webpage that is not displayed on the actual page.
+	<meta charset="UTF-8">: This line specifies the character encoding as UTF-8, which supports a wide range of characters and symbols.
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">: This meta tag is often used for responsive web design. It sets the initial scale of the 		webpage to 1.0 and adapts the content to the width of the device screen.
+	<title>Welcome to Our Website</title>: This sets the title of the webpage, which is displayed in the browser's title bar or tab.
+
+4. CSS Styles:
+	The <style> section contains CSS (Cascading Style Sheets) rules that define the visual appearance of the webpage. These rules include:
+	Styling for the body element, setting background color, font, and alignment.
+	Styling for h1 and p elements, specifying font sizes and margins.
+	Styling for anchor (<a>) elements, defining their appearance and hover effects.
+
+5. Body Section:
+	<body>: This section contains the content that is displayed on the webpage.
+	<h1>: This is a level 1 heading, displaying the text "Welcome to Our Website" in a large font size.
+	<p>: This is a paragraph element, displaying the text "Your one-stop destination for all things amazing!" in a slightly smaller font size.
+	<a href="load.html">Get Started</a>: This is a hyperlink (<a>) that appears as a button with the text "Get Started." When clicked, it will navigate to a page named 		"load.html" (the href attribute specifies the link destination).
+
+6. CSS for Hover Effect:
+	The CSS rule for a:hover defines how the hyperlink button should look when the mouse pointer hovers over it. In this case, the background color changes to a different 		shade when hovered.
+		-----------------------------------------------------------------------------------------------------------------------
+
+		-------------------------------------------------- FOR SECOND DOCUMNET (load.html)--------------------------------------
+1. HTML Document Structure:
+	This is an HTML document that creates a webpage.
+
+2. Head Section:
+	It includes the <title> element, setting the title of the webpage to "Loading Page."
+	The <link> element is used to link an external CSS file called "styles.css" for styling.
+
+3. Body Section:
+	The <body> section contains the visible content of the webpage.
+
+4. Loading Animation:
+	Inside the <div> with the class "loading-page," there's a loading animation represented by three circles. This is often used to indicate that a page is loading.
+
+5. JavaScript for Redirection:
+	The <script> element contains JavaScript code.
+	It simulates a 5-second (5000 milliseconds) delay using the setTimeout function.
+	After the delay, it redirects the user to a second page named "seond.html" using window.location.href.
+--------------------------
+CSS (filename: style.css):
+1. Resetting Default Styles:
+	The body element is reset with no margins or padding to ensure a clean starting point for styling.
+
+2. Styling the Loading Page:
+	.loading-page styles the main container for the loading page.
+	It uses a radial gradient background that creates a colorful background effect.
+	min-height: 100vh ensures that the container takes up at least the full viewport height.
+	display: flex is used to create a flex container, allowing for easy alignment of elements.
+	flex-direction: column arranges child elements vertically.
+	justify-content: center and align-items: center center the content both horizontally and vertically.
+
+3.Loader Styles:
+	.loader styles a container for the loader elements.
+	It's a flex container with centered text and white color.
+
+4. Custom Loader Animation:
+.custom-loader styles the container for the loading animation circles.
+
+5. Circle Styles:
+	.circle styles individual loading circles.
+	They are 20px by 20px circles with a white background and a border radius to make them round.
+	animation property creates a custom animation using @keyframes named custom-loader-motion. This animation causes the circles to move up and down in an alternate 	pattern, giving the loading effect.
+
+6. Animation Delay:
+	.circle:nth-child(2) and .circle:nth-child(3) add animation delays to the second and third circles, respectively, creating a staggered animation effect.
+
+7. Loading Text Styles:
+	.loading-text styles the text that says "Loading."
+	It's larger, bold, and centered.
+	The animation property uses a @keyframes named text-motion to create a pulsating opacity effect on the text.
+
+8. Keyframe Animations:
+	@keyframes custom-loader-motion defines the animation for the custom loader circles, making them move up and down using the transform property.
+	@keyframes text-motion defines the animation for the loading text, changing its opacity to create a pulsating effect.
+		-----------------------------------------------------------------------------------------------------------------------
+
+		-------------------------------------------------- FOR THIRD DOCUMNET (seond.html)--------------------------------------
+1. Document Type Declaration (DOCTYPE):
+	Specifies that this is an HTML5 document.
+
+2. HTML Structure:
+	The document starts with an HTML <html> tag with the "en" attribute indicating English as the language.
+
+3. Head Section:
+	Contains metadata and the title of the webpage.
+	Sets the character encoding to UTF-8 and defines the viewport settings for responsive design.
+
+4. CSS Styles:
+	Defines the CSS styles for the India map:
+		a. Sets the background color to a shade of blue (#3498db).
+		b. Makes the body a flex container, centering its content both vertically and horizontally.
+		c. Sets a minimum height of 100% of the viewport height (100vh).
+		d. Hides scrollbars with overflow: hidden; to create a clean look.
+
+
+5. India Map Image:
+	Inside the <body> section, there's an <img> element with the ID "india-map."
+	The image source (src) is set to "map.jpg," representing the India map.
+	It's wrapped in an <a> (anchor) element with an href attribute pointing to "your_link.html." This is where you would specify the URL the user should be redirected to 	when clicking on the map.
+
+6. CSS for Image Interaction:
+	The CSS for #india-map styles the image:
+	Sets its width and height to cover the entire viewport (width: 100%; height: 100%;).
+	Uses object-fit: cover; to ensure the image covers the available space while maintaining its aspect ratio.
+	Positions it absolutely at the top-left corner of the viewport (position: absolute; top: 0; left: 0;).
+	Sets an initial opacity of 0.8, creating a slightly transparent effect (opacity: 0.8;).
+	Adds a smooth opacity transition on hover (transition: opacity 0.3s ease;) and changes the cursor to a pointer on hover (cursor: pointer;).
+
+7.Interactive Hover Effect:
+	When you hover over the image (#india-map:hover), the opacity increases to 1, making it fully opaque. This creates an interactive hover effect.
